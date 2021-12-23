@@ -48,7 +48,7 @@ p{
 }
 
 .section-title span{
-    color: crimson;
+    color: #3ae8a8;
 }
 
 .cta{
@@ -56,7 +56,7 @@ p{
     padding: 10px 30px;
     color: whitesmoke;
     background-color: transparent;
-    border: 2px solid crimson;
+    border: 2px solid #3ae8a8;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -67,5 +67,64 @@ p{
 
 .cta:hover{
     color: whitesmoke;
-    background-color: crimson;
+    background-color: #3ae8a8;
+}
+
+/*header section*/
+
+
+
+/*main page section*/
+#main{
+    background-image: url("IMG/Full Stack Developer Patric Noriega.png");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#main::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+#main .main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/*edu section */
+
+
+/*projects section*/
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#projects .projects-header h1{
+    margin-bottom: 50px;
+}
+
+#projects .all-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
 }
