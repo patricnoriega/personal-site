@@ -25,7 +25,9 @@ a {
 }
 
 img{
-
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 p{
@@ -95,10 +97,83 @@ p{
     margin: 0 auto;
     padding: 0 50px;
 }
+#main .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: #3ae8a8;
+    background-color: transparent;
+    border: 2px solid #3ae8a8;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#main .cta:hover{
+    color: whitesmoke;
+    background-color: #3ae8a8;
+}
 
 /*edu section */
+#edu .edu {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#edu .edu-top {
+    max-width: 500px;
+    margin: 0 auto;
+}
 
-
+#edu .edu-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#edu .edu-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url("IMG/iStock-600402522.jpeg");
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+}
+#ed .edu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.9;
+    z-index: -1;
+}
+#edu .edu-item .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#edu .edu-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#edu .edu-item p {
+    color: white;
+    text-align: left;
+}
 /*projects section*/
 #projects .projects{
     flex-direction: column;
