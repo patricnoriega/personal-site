@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-.container{
+.container {
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -24,13 +24,13 @@ a {
     justify-content: center;
 }
 
-img{
+img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-p{
+p {
     color: black;
     font-size: 1.4rem;
     margin-top: 5px;
@@ -39,7 +39,7 @@ p{
     letter-spacing: 0.05rem;
 }
 
-.section-title{
+.section-title {
     font-size: 4rem;
     font-weight: 300;
     color: black;
@@ -49,11 +49,11 @@ p{
     text-align: center;
 }
 
-.section-title span{
+.section-title span {
     color: #3ae8a8;
 }
 
-.cta{
+.cta {
     display: inline-block;
     padding: 10px 30px;
     color: whitesmoke;
@@ -67,7 +67,7 @@ p{
     transition-property: background-color, color;
 }
 
-.cta:hover{
+.cta:hover {
     color: whitesmoke;
     background-color: #3ae8a8;
 }
@@ -75,16 +75,16 @@ p{
 /*header section*/
 
 
-
 /*main page section*/
-#main{
+#main {
     background-image: url("IMG/Full Stack Developer Patric Noriega.png");
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
 }
-#main::after{
+
+#main::after {
     content: '';
     position: absolute;
     left: 0;
@@ -92,12 +92,14 @@ p{
     height: 100%;
     width: 100%;
 }
-#main .main{
+
+#main .main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
 }
-#main .cta{
+
+#main .cta {
     display: inline-block;
     padding: 10px 30px;
     color: #3ae8a8;
@@ -110,7 +112,8 @@ p{
     transition: .3s ease;
     transition-property: background-color, color;
 }
-#main .cta:hover{
+
+#main .cta:hover {
     color: whitesmoke;
     background-color: #3ae8a8;
 }
@@ -123,6 +126,7 @@ p{
     margin: 0 auto;
     padding: 100px 0;
 }
+
 #edu .edu-top {
     max-width: 500px;
     margin: 0 auto;
@@ -134,7 +138,8 @@ p{
     justify-content: center;
     flex-wrap: wrap;
 }
-#edu .edu-item{
+
+#edu .edu-item {
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -148,6 +153,7 @@ p{
     position: relative;
     z-index: 1;
 }
+
 #ed .edu-item::after {
     content: '';
     position: absolute;
@@ -159,41 +165,45 @@ p{
     opacity: 0.9;
     z-index: -1;
 }
+
 #edu .edu-item .icon {
     height: 80px;
     width: 80px;
     margin-bottom: 20px;
 }
+
 #edu .edu-item h2 {
     font-size: 2rem;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+
 #edu .edu-item p {
     color: white;
     text-align: left;
 }
+
 /*projects section*/
-#projects .projects{
+#projects .projects {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
 }
 
-#projects .projects-header h1{
+#projects .projects-header h1 {
     margin-bottom: 50px;
 }
 
-#projects .all-projects{
+#projects .all-projects {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-#projects .project-item{
+#projects .project-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,4 +212,28 @@ p{
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
+}
+
+#projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+}
+#projects .project-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+#projects .project-info h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#projects .project-info p {
+    color: white;
 }
