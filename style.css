@@ -71,11 +71,13 @@ p {
     color: whitesmoke;
     background-color: #3ae8a8;
 }
+
 .brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
     color: white;
 }
+
 .brand h1 span {
     color: #3ae8a8;
 }
@@ -233,24 +235,29 @@ p {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color: white;
 }
+
 #projects .project-info h1 {
     font-size: 4rem;
     font-weight: 500;
 }
+
 #projects .project-info h2 {
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 10px;
 }
+
 #projects .project-info p {
     color: white;
 }
-#projects .project-img{
+
+#projects .project-img {
     flex-basis: 50%;
     height: 300px;
     overflow: hidden;
     position: relative;
 }
+
 #projects .project-img:after {
     content: '';
     position: absolute;
@@ -261,49 +268,59 @@ p {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     opacity: .7;
 }
-#projects .project-img img{
+
+#projects .project-img img {
     transition: .3s ease transform;
 }
-#projects .project-item:hover .project-img img{
-transform: scale(1.1);
+
+#projects .project-item:hover .project-img img {
+    transform: scale(1.1);
 }
+
 /*about me section*/
-#about .about{
+#about .about {
     flex-direction: column-reverse;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 20px;
 }
-#about .col-left{
+
+#about .col-left {
     width: 250px;
     height: 360px;
 }
-#about .col-right{
+
+#about .col-right {
     width: 100%;
 
 }
-#about .col-right h2{
+
+#about .col-right h2 {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: .2rem;
     margin-bottom: 10px;
 }
+
 #about .col-right p {
     margin-bottom: 20px;
 }
+
 #about .col-right .cta {
     color: black;
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: 2rem;
 }
+
 #about .col-left .about-img {
     height: 100%;
     width: 100%;
     position: relative;
     border: 10px solid white;
 }
+
 #about .col-left .about-img::after {
     content: '';
     position: absolute;
@@ -314,6 +331,7 @@ transform: scale(1.1);
     border: 7px solid #3ae8a8;
     z-index: -1;
 }
+
 /* contact Section */
 #contact .contact {
     flex-direction: column;
@@ -321,10 +339,12 @@ transform: scale(1.1);
     margin: 0 auto;
     width: 90%;
 }
+
 #contact .contact-items {
     /* max-width: 400px; */
     width: 100%;
 }
+
 #contact .contact-item {
     width: 80%;
     padding: 20px;
@@ -339,35 +359,43 @@ transform: scale(1.1);
     box-shadow: 0px 0px 18px 0 #0000002c;
     transition: 0.3s ease box-shadow;
 }
+
 #contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0 #0000002c;
 }
+
 #contact .icon {
     width: 70px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
+
 #contact .contact-info h1 {
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 5px;
 }
+
 #contact .contact-info h2 {
     font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 500;
 }
+
 /*End contact Section */
+
 /* Footer */
 #footer {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
+
 #footer .footer {
     min-height: 200px;
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 10px;
 }
+
 #footer h2 {
     color: white;
     font-weight: 500;
@@ -376,26 +404,32 @@ transform: scale(1.1);
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 #footer .social-icon {
     display: flex;
     margin-bottom: 30px;
 }
+
 #footer .social-item {
     height: 50px;
     width: 50px;
     margin: 0 5px;
 }
+
 #footer .social-item img {
     filter: grayscale(1);
     transition: 0.3s ease filter;
 }
+
 #footer .social-item:hover img {
     filter: grayscale(0);
 }
+
 #footer p {
     color: white;
     font-size: 1.3rem;
 }
+
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
     .cta {
@@ -406,38 +440,121 @@ transform: scale(1.1);
     h1.section-title {
         font-size: 6rem;
     }
-    /* main */
+
+    /* main  (tablet view) */
     #main h1 {
         font-size: 7rem;
     }
-    /* End main */
 
-    /* edu Section */
+    /* End main (tablet view) */
+    /* edu Section  (tablet view) */
     #edu .edu-bottom .edu-item {
         flex-basis: 45%;
         margin: 2.5%;
     }
-    /* End edu Section */
 
-    /* Project */
+    /* End edu Section (tablet view) */
+    /* Project (tablet view) */
     #projects .project-item {
         flex-direction: row;
     }
+
     #projects .project-item:nth-child(even) {
         flex-direction: row-reverse;
     }
+
     #projects .project-item {
         height: 400px;
         margin: 0;
         width: 100%;
         border-radius: 0;
     }
+
     #projects .all-projects .project-info {
         height: 100%;
     }
+
     #projects .all-projects .project-img {
         height: 100%;
     }
-    /* End Project */
 
+    /* End Project (tablet view) */
+    /* About (tablet view) */
+    #about .about {
+        flex-direction: row;
+    }
+
+    #about .col-left {
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+
+    #about .about .col-left .about-img::after {
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid #3ae8a8;
+    }
+
+    #about .col-right {
+        text-align: left;
+        padding: 30px;
+    }
+
+    #about .col-right h1 {
+        text-align: left;
+    }
+
+    /* End About (tablet view) */
+    /*    Contact (tablet view) */
+    #contact .contact {
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+    }
+
+    #contact .contact-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    #contact .contact-item {
+        width: 30%;
+        margin: 0;
+        flex-direction: row;
+    }
+
+    #contact .contact-item .icon {
+        height: 100px;
+        width: 100px;
+    }
+
+    #contact .contact-item .icon img {
+        object-fit: contain;
+    }
+
+    #contact .contact-item .contact-info {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+    /*    Contact (tablet view)*/
+    /*    end of Tablet view   */
+
+    /* Media Query For Desktop */
+    @media only screen and (min-width: 1200px) {
+        #edu .edu-bottom .edu-item {
+            flex-basis: 44%;
+            margin: 1.5%;
+        }
+
+
+    }
 }
